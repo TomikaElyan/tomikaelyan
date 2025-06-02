@@ -101,7 +101,7 @@ body[data-theme="light"] .moon-icon { display: block; }
 
 /* --- Hero Section --- */
 #hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover; /* Replace with your hero image */
+    background: url('hero-bg-1.jpg') no-repeat center center/cover; /* Replace with your hero image */
     color: white;
     text-align: center;
     padding: 100px 20px;
