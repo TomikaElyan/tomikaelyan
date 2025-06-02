@@ -99,55 +99,34 @@ body[data-theme="light"] .sun-icon { display: none; }
 body[data-theme="light"] .moon-icon { display: block; }
 
 
-/* --- Hero Section - MODIFIED --- */
+/* --- Hero Section --- */
 #hero {
-    /* Removed old background property */
-    background-size: cover;
-    background-position: center center;
+    background: url('hero-bg.jpg') no-repeat center center/cover; /* Replace with your hero image */
     color: white;
     text-align: center;
     padding: 100px 20px;
-    min-height: 550px; /* Increased height for better visual effect */
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    overflow: hidden; /* Important for background elements */
-
-    /* New: Background slideshow properties */
-    animation: background-slideshow 15s infinite; /* 15s total duration, infinite loop */
-    /* Add a fallback background color */
-    background-color: #333; /* Dark fallback if images don't load */
+    position: relative; /* For overlay */
 }
 
-/* Optional: Dark overlay for better text readability (keep this) */
-#hero::before {
+#hero::before { /* Optional: Dark overlay for better text readability */
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5); /* Slightly darker overlay for images */
+    background: rgba(0,0,0,0.4);
     z-index: 1;
 }
 
-
 .hero-content {
     position: relative;
-    z-index: 2; /* Ensure text is above the overlay and background */
+    z-index: 2;
 }
-
-/* --- New: Keyframes for Background Slideshow --- */
-@keyframes background-slideshow {
-    0% {
-        background-image: url'hero-bg-1.jpg'; /* First image */
-        opacity: 1;
-    }
-    25% {
-        background-image: url'hero-bg-1.jpg'; /* Hold first image */
-        opacity: 1;
-    }
 
 #hero h1 {
     font-family: 'Playfair Display', serif;
