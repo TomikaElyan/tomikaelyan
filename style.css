@@ -141,11 +141,11 @@ body[data-theme="light"] .moon-icon { display: block; }
 /* --- New: Keyframes for Background Slideshow --- */
 @keyframes background-slideshow {
     0% {
-        background-image: url('hero-bg-1.jpg'); /* First image */
+        background-image: url'hero-bg-1.jpg'; /* First image */
         opacity: 1;
     }
     25% {
-        background-image: url('hero-bg-1.jpg'); /* Hold first image */
+        background-image: url'hero-bg-1.jpg'; /* Hold first image */
         opacity: 1;
     }
 
